@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adviture Teknoloji A.Ş. | Advice to the Future</title>
+    <title>adviture | advice to the future</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
@@ -13,130 +13,71 @@
         .cosistant-card { background: linear-gradient(145deg, #0f172a, #1e1b4b); border: 1px solid #3730a3; }
         .feature-card { background: rgba(30, 41, 59, 0.3); border: 1px solid rgba(59, 130, 246, 0.1); transition: all 0.3s ease; }
         .feature-card:hover { border-color: rgba(59, 130, 246, 0.5); transform: translateY(-5px); }
+        .lowercase-brand { letter-spacing: -0.05em; }
     </style>
 </head>
 <body>
 
     <nav class="fixed w-full z-50 glass border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-black tracking-tighter italic">ADVITURE<span class="text-blue-500">.</span></div>
-            <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-[0.2em] text-slate-400">
-                <a href="#uzmanlik" class="hover:text-blue-400 transition">Uzmanlık</a>
-                <a href="#platform" class="hover:text-blue-400 transition">Platform & AI</a>
-                <a href="#guvenlik" class="hover:text-blue-400 transition">Yönetişim & Güvenlik</a>
-                <a href="#referanslar" class="hover:text-blue-400 transition">Referanslar</a>
-                <a href="#iletisim" class="text-blue-400 border border-blue-400/30 px-4 py-1 rounded hover:bg-blue-400 hover:text-white transition">İletişim</a>
+            <div class="text-3xl font-extrabold lowercase-brand italic">adviture<span class="text-blue-500">.</span></div>
+            <div class="hidden md:flex space-x-8 text-xs font-bold lowercase tracking-wider text-slate-400">
+                <a href="#uzmanlik" class="hover:text-blue-400 transition">uzmanlık</a>
+                <a href="#platform" class="hover:text-blue-400 transition">platform & ai</a>
+                <a href="#guvenlik" class="hover:text-blue-400 transition">yönetişim & güvenlik</a>
+                <a href="#referanslar" class="hover:text-blue-400 transition">referanslar</a>
+                <a href="#iletisim" class="text-blue-400 border border-blue-400/30 px-4 py-1 rounded hover:bg-blue-400 hover:text-white transition">iletişim</a>
             </div>
         </div>
     </nav>
 
     <header class="hero-bg min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
-        <div class="inline-block px-4 py-1 border border-blue-500/30 rounded-full text-blue-400 text-xs font-bold uppercase tracking-[0.3em] mb-6">
-            Advice to the Future
+        <div class="inline-block px-4 py-1 border border-blue-500/30 rounded-full text-blue-400 text-xs font-medium lowercase tracking-widest mb-6">
+            advice to the future
         </div>
-        <h1 class="text-5xl md:text-8xl font-black mb-8 leading-[1.1] tracking-tight text-white">
-            Veri Gücü, <br><span class="text-blue-500">Yönetişim Güveni.</span>
+        <h1 class="text-5xl md:text-8xl font-black mb-8 leading-[1.1] tracking-tighter text-white lowercase">
+            veri gücü, <br><span class="text-blue-500">yönetişim güveni.</span>
         </h1>
         <p class="max-w-3xl text-slate-400 text-lg md:text-xl leading-relaxed mb-12">
-            2012'den gelen <strong>Telekom ve Kamu</strong> veri otoritesini, <strong>Cosistant</strong> inovasyon motoruyla birleştirdik. Büyük veriyi proaktif güvenlik ve tam yönetişim ile geleceğe taşıyoruz.
+            2012'den gelen <strong>telekom ve kamu</strong> veri otoritesini, <strong>cosistant</strong> inovasyon motoruyla birleştirdik. Büyük veriyi proaktif güvenlik ve tam yönetişim ile geleceğe taşıyoruz.
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
-            <a href="#platform" class="bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 rounded font-bold transition">Platform Yetenekleri</a>
-            <a href="https://cosistant.com" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white px-12 py-4 rounded font-bold transition">Cosistant Hub</a>
+            <a href="#platform" class="bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 rounded-full font-bold transition lowercase">platform yetenekleri</a>
+            <a href="https://cosistant.com" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white px-12 py-4 rounded-full font-bold transition lowercase">cosistant hub</a>
         </div>
     </header>
 
-    <section id="platform" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-black mb-4 italic">Cosistant Platform Gücü</h2>
-            <p class="text-slate-400">İnovasyonu saniyeler içinde ölçeklendiren çevik (Agile) mühendislik ekosistemi.</p>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="feature-card p-8 rounded-2xl">
-                <h3 class="text-xl font-bold mb-4 text-blue-400 italic">Hızlı Prototipleme</h3>
-                <p class="text-slate-400 text-sm">Fikir aşamasından MVP'ye geçiş süresini Cosistant'ın hazır kütüphaneleri ve CI/CD süreçleri ile %40 hızlandırıyoruz.</p>
-            </div>
-            <div class="feature-card p-8 rounded-2xl">
-                <h3 class="text-xl font-bold mb-4 text-indigo-400 italic">AI-Ready Mimariler</h3>
-                <p class="text-slate-400 text-sm">ML-Ops standartları ile veriyi yapay zeka eğitimine hazır hale getiren, ölçeklenebilir boru hatları (pipelines) kuruyoruz.</p>
-            </div>
-            <div class="feature-card p-8 rounded-2xl">
-                <h3 class="text-xl font-bold mb-4 text-purple-400 italic">Çevik (Agile) Teslimat</h3>
-                <p class="text-slate-400 text-sm">Değişime saniyeler içinde adapte olan, sürekli feedback ve iteratif gelişim odaklı teslimat modeli.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="guvenlik" class="py-24 bg-slate-900/40 border-y border-slate-800">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row gap-16 items-center">
-                <div class="md:w-1/2">
-                    <h2 class="text-4xl font-black mb-8 italic text-white">Kurumsal Yönetişim & <span class="text-blue-500">Sıfır Risk.</span></h2>
-                    <p class="text-slate-400 mb-8 leading-relaxed">
-                        Verinizin gücünü yapay zeka ile açığa çıkarırken, kontrolün her zaman sizde kalmasını sağlıyoruz. Platformumuz; veriyi şeffaflaştıran güçlü yönetişim politikaları ve askeri standartlardaki güvenlik katmanıyla, inovasyonu sıfır uyumluluk riskiyle hayata geçirir.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <span class="text-blue-500 mr-3 text-xl">🛡️</span>
-                            <div>
-                                <h4 class="font-bold">Veri Yönetişimi (Data Governance)</h4>
-                                <p class="text-xs text-slate-500">Master Data Management (MDM) ile tekil doğru kaynak ve tam şeffaf Data Lineage.</p>
-                            </div>
+    <section id="platform" class="py-24 bg-slate-900/30 border-y border-slate-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="cosistant-card p-12 rounded-3xl relative overflow-hidden">
+                <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-4xl font-black mb-6 tracking-tighter lowercase">cosistant: <br><span class="text-indigo-400">yapay zeka laboratuvarımız</span></h2>
+                        <p class="text-slate-300 mb-8 leading-relaxed">
+                            <strong>adviture</strong> teknolojik vizyonunun kalbinde <strong>cosistant</strong> yer alıyor. 
+                            Yapay zeka çalışmalarımızın temelini oluşturan bu ekosistem, karmaşık veri setlerini 
+                            işlemek ve akıllı otomasyonlar geliştirmek için gerekli yetkinlikleri sunuyor.
+                        </p>
                         </div>
-                        <div class="flex items-start">
-                            <span class="text-blue-500 mr-3 text-xl">🔐</span>
-                            <div>
-                                <h4 class="font-bold">Proaktif Güvenlik & Uyumluluk</h4>
-                                <p class="text-xs text-slate-500">KVKK/GDPR tam uyum, AI destekli siber savunma ve Egemen Bulut (Sovereign Cloud) esnekliği.</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="md:w-1/2 grid grid-cols-1 gap-4">
-                    <div class="bg-slate-950 p-6 rounded-xl border border-slate-800 italic text-sm text-blue-400">
-                        "Veri artık sadece saklanan değil, yönetilen ve korunan en büyük varlığınızdır."
-                    </div>
-                    <div class="bg-slate-950 p-6 rounded-xl border border-slate-800 italic text-sm text-indigo-400">
-                        "Master Data Management ile sistemler arası tutarsızlığa son veriyoruz."
-                    </div>
-                    <div class="bg-slate-950 p-6 rounded-xl border border-slate-800 italic text-sm text-slate-400">
-                        "Sadece BT değil, iş birimleri için de anlaşılır bir veri sözlüğü ve şeffaflık."
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="referanslar" class="py-24 px-6 max-w-7xl mx-auto">
-        <h2 class="text-2xl font-bold mb-16 border-l-4 border-blue-500 pl-4 uppercase tracking-tighter">Referans Otoritelerimiz</h2>
-        <div class="grid md:grid-cols-2 gap-12">
-            <div class="p-8 border border-slate-800 rounded-xl hover:bg-slate-900/40 transition">
-                <h4 class="text-blue-500 font-bold mb-2 text-xs">Vodafone TR</h4>
-                <h3 class="text-xl font-bold mb-4 italic">20M+ CRM Veri Kalitesi & Migrasyon</h3>
-                <p class="text-slate-400 text-sm leading-relaxed italic">Milyonlarca abone verisinin temizlenmesi, ulusal adres veritabanıyla uyumu ve sıfır hata ile yeni mimariye taşınması.</p>
-            </div>
-            <div class="p-8 border border-slate-800 rounded-xl hover:bg-slate-900/40 transition">
-                <h4 class="text-blue-500 font-bold mb-2 text-xs">Merkür Turizm</h4>
-                <h3 class="text-xl font-bold mb-4 italic">Türkiye'nin İlk SAP HANA Kurulumu</h3>
-                <p class="text-slate-400 text-sm leading-relaxed italic">Türkiye'de bir ilki gerçekleştirerek HANA veritabanı teknolojisi ile uçtan uca dijital dönüşüm liderliği.</p>
             </div>
         </div>
     </section>
 
     <footer id="iletisim" class="py-20 border-t border-slate-900 text-center px-6">
         <div class="mb-12">
-            <div class="text-3xl font-black mb-2 tracking-tighter italic">ADVITURE<span class="text-blue-500">.</span></div>
-            <p class="text-slate-500 text-sm">Advice to the Future | Baki Aktürk</p>
+            <div class="text-4xl font-black mb-2 tracking-tighter italic lowercase">adviture<span class="text-blue-500">.</span></div>
+            <p class="text-slate-500 text-sm lowercase">advice to the future | baki aktürk</p>
         </div>
-        <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
-            <div class="text-xs tracking-widest text-slate-500 uppercase italic">İstanbul, Türkiye</div>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12 text-xs uppercase tracking-widest text-slate-600">
+            <div>istanbul, türkiye</div>
             <div class="h-px w-8 bg-slate-800 hidden md:block"></div>
-            <div class="text-xs tracking-widest uppercase italic">
-                <span class="text-slate-600">Teknoloji Hub:</span> 
-                <a href="https://cosistant.com" target="_blank" class="text-indigo-400 hover:text-indigo-300 font-bold transition">COSISTANT.COM</a>
+            <div>
+                <span>ai hub:</span> 
+                <a href="https://cosistant.com" target="_blank" class="text-indigo-400 hover:text-indigo-300 font-bold transition">cosistant.com</a>
             </div>
         </div>
-        <p class="text-slate-700 text-[10px] uppercase tracking-[0.4em]">© 2026 Adviture Teknoloji A.Ş. Tüm Hakları Saklıdır.</p>
+        <p class="text-slate-800 text-[10px] uppercase tracking-[0.4em]">© 2026 adviture teknoloji a.ş. tüm hakları saklıdır.</p>
     </footer>
 
 </body>
