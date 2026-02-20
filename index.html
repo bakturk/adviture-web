@@ -5,99 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adviture Teknoloji A.Ş. | Advice to the Future</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; }
-        .hero-gradient { background: radial-gradient(circle at center, #1e3a8a 0%, #020617 70%); }
-        .text-gradient { background: linear-gradient(to right, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; scroll-behavior: smooth; }
+        .glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); }
+        .gradient-border { border: 1px solid; border-image: linear-gradient(to right, #3b82f6, #8b5cf6) 1; }
+        .hero-bg { background: radial-gradient(circle at 50% 50%, #1e293b 0%, #020617 100%); }
     </style>
 </head>
-<body class="selection:bg-blue-500 selection:text-white">
+<body>
 
-    <nav class="fixed w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+    <nav class="fixed w-full z-50 glass border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="text-2xl font-black tracking-tighter">ADVITURE<span class="text-blue-500">.</span></div>
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-400 uppercase tracking-widest">
+            <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-[0.2em] text-slate-400">
                 <a href="#uzmanlik" class="hover:text-blue-400 transition">Uzmanlık</a>
-                <a href="#referanslar" class="hover:text-blue-400 transition">Başarı Hikayeleri</a>
-                <a href="#kurumsal" class="hover:text-blue-400 transition">Kurumsal</a>
-                <a href="#iletisim" class="text-white border border-blue-500 px-4 py-1 rounded-full hover:bg-blue-500 transition">İletişim</a>
+                <a href="#agile" class="hover:text-blue-400 transition">Agile Süreç</a>
+                <a href="#referanslar" class="hover:text-blue-400 transition">Referanslar</a>
+                <a href="#iletisim" class="text-blue-400 border border-blue-400/30 px-4 py-1 rounded hover:bg-blue-400 hover:text-white transition">İletişim</a>
             </div>
         </div>
     </nav>
 
-    <header class="hero-gradient pt-32 pb-20 px-6 text-center min-h-screen flex flex-col justify-center">
-        <p class="text-blue-400 font-bold tracking-[0.4em] uppercase text-sm mb-4">Advice to the Future</p>
-        <h1 class="text-5xl md:text-8xl font-black mb-6 tracking-tight">Veriniz Kadar <span class="text-gradient">Güçlüsünüz.</span></h1>
-        <p class="max-w-3xl mx-auto text-slate-400 text-lg md:text-xl leading-relaxed mb-10">
-            2012'den bugüne Telekom ve Kamu sektörünün en karmaşık veri operasyonlarını yönettik. 
-            Şimdi bu devasa tecrübeyi Yapay Zeka, GenerativeBI ve Siber Güvenlik ile geleceğe taşıyoruz.
+    <header class="hero-bg min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
+        <div class="inline-block px-4 py-1 border border-blue-500/30 rounded-full text-blue-400 text-xs font-bold uppercase tracking-[0.3em] mb-6">
+            Advice to the Future
+        </div>
+        <h1 class="text-5xl md:text-8xl font-black mb-8 leading-[1.1] tracking-tight">
+            Veri ile Geleceği <br><span class="text-blue-500">İnşa Edin.</span>
+        </h1>
+        <p class="max-w-2xl text-slate-400 text-lg md:text-xl leading-relaxed mb-12">
+            2012'den bu yana Telekom ve Kamu sektörünün devasa veri operasyonlarını yönettik. 
+            Bugün bu mirası <strong>Agile metodolojiler</strong> ve <strong>AI destekli analitik</strong> ile geleceğe taşıyoruz.
         </p>
-        <div class="flex flex-col md:flex-row justify-center gap-4">
-            <a href="#referanslar" class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg font-bold transition">Projelerimizi İnceleyin</a>
-            <a href="#kurumsal" class="bg-slate-800 hover:bg-slate-700 text-white px-10 py-4 rounded-lg font-bold transition">Hikayemiz</a>
+        <div class="flex flex-col sm:row gap-4">
+            <a href="#agile" class="bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 rounded font-bold transition">Çevik Dönüşümü Keşfet</a>
         </div>
     </header>
 
     <section id="uzmanlik" class="py-24 px-6 max-w-7xl mx-auto">
-        <h2 class="text-center text-3xl font-bold mb-16 tracking-tight uppercase">Stratejik <span class="text-blue-500">Yetkinlikler</span></h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="p-8 border border-slate-800 bg-slate-900/30 rounded-2xl hover:border-blue-500/50 transition">
-                <h3 class="text-xl font-bold mb-4">Veri Yönetimi & Migrasyon</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Milyarlarca satır verinin temizlenmesi, uçtan uca güvenli göçü ve modern mimarilere hatasız aktarımı.</p>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="space-y-4">
+                <div class="w-12 h-1 bg-blue-500"></div>
+                <h3 class="text-2xl font-bold">Veri Mühendisliği</h3>
+                <p class="text-slate-400 text-sm">Milyarlarca satır verinin temizlenmesi ve modern mimarilere sıfır hatayla göçü (Migration Excellence).</p>
             </div>
-            <div class="p-8 border border-slate-800 bg-slate-900/30 rounded-2xl hover:border-blue-500/50 transition">
-                <h3 class="text-xl font-bold mb-4">GenerativeBI & AI</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Veri ambarı (DWH) derinliğimizi üretken yapay zeka ile birleştirerek verinizle konuşmanızı sağlıyoruz.</p>
+            <div class="space-y-4">
+                <div class="w-12 h-1 bg-purple-500"></div>
+                <h3 class="text-2xl font-bold">GenerativeBI & AI</h3>
+                <p class="text-slate-400 text-sm">Veri ambarı tecrübesini yapay zeka ile harmanlayarak "konuşan veri" modelleri oluşturuyoruz.</p>
             </div>
-            <div class="p-8 border border-slate-800 bg-slate-900/30 rounded-2xl hover:border-blue-500/50 transition">
-                <h3 class="text-xl font-bold mb-4">Siber Güvenlik</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Kurumsal varlıkların korunması için yapay zeka destekli, proaktif güvenlik stratejileri ve mimari tasarımı.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="referanslar" class="py-24 bg-slate-900/20">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12">Kanıtlanmış <span class="text-blue-500">Başarılar</span></h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="border-l-2 border-blue-500 pl-6 py-4">
-                    <span class="text-xs text-blue-400 font-bold uppercase">Vodafone TR | Genesis & Ceylan</span>
-                    <h3 class="text-2xl font-bold mt-2 mb-3">Dev Ölçekli BSS Dönüşümü</h3>
-                    <p class="text-slate-400 text-sm">Milyonlarca abonenin fatura ve CRM verisinin "Kenan FX" sistemine sıfır veri kaybıyla taşınması ve veri temizleme (cleansing) liderliği.</p>
-                </div>
-                <div class="border-l-2 border-blue-500 pl-6 py-4">
-                    <span class="text-xs text-blue-400 font-bold uppercase">Türk Telekom | Program One</span>
-                    <h3 class="text-2xl font-bold mt-2 mb-3">Sistem Modernizasyonu</h3>
-                    <p class="text-slate-400 text-sm">In-house uygulamaların endüstriyel Siebel ve Billing mimarilerine dönüştürülmesinde proje yönetimi ve veri göçü otoritesi.</p>
-                </div>
-                <div class="border-l-2 border-blue-500 pl-6 py-4">
-                    <span class="text-xs text-blue-400 font-bold uppercase">İŞKUR | İMYS</span>
-                    <h3 class="text-2xl font-bold mt-2 mb-3">Kamu Mali Yönetim Sistemi</h3>
-                    <p class="text-slate-400 text-sm">Muhasebe ve tahsilat sistemlerinin modernizasyonu, veri madenciliği ve performans modüllerinin analitik entegrasyonu.</p>
-                </div>
-                <div class="border-l-2 border-blue-500 pl-6 py-4">
-                    <span class="text-xs text-blue-400 font-bold uppercase">Turkcell</span>
-                    <h3 class="text-2xl font-bold mt-2 mb-3">Kalite & Test Yönetimi</h3>
-                    <p class="text-slate-400 text-sm">Terminal test süreçlerinin uçtan uca yönetilmesi ve kalite standartlarının otomatize edilmesi.</p>
-                </div>
+            <div class="space-y-4">
+                <div class="w-12 h-1 bg-emerald-500"></div>
+                <h3 class="text-2xl font-bold">Siber Dayanıklılık</h3>
+                <p class="text-slate-400 text-sm">Kurumsal verilerin korunmasında yapay zeka destekli proaktif güvenlik mimarileri.</p>
             </div>
         </div>
     </section>
 
-    <section id="kurumsal" class="py-24 px-6 max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-8 italic">"Advice to the Future"</h2>
-        <p class="text-slate-300 leading-relaxed text-lg mb-8">
-            Adviture, 2012 yılında karmaşık teknolojik dönüşümlere liderlik etmek amacıyla kuruldu. 
-            On yılı aşkın süredir bölgenin en büyük telekomünikasyon ve kamu projelerinde "Veri Göçü" ve "Program Yönetimi" rollerini üstlenerek kurumsal bir otorite haline geldik. 
-            Bugün, kurucumuz Baki Aktürk liderliğinde, bu derin tecrübeyi yeni nesil teknoloji girişimciliği ekosistemiyle birleştiriyoruz.
-        </p>
+    <section id="agile" class="py-24 bg-slate-900/40 border-y border-slate-800">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4 uppercase tracking-tighter">Hız ve Çeviklik (Agile)</h2>
+            <p class="text-slate-400 mb-16">Artık aylar süren analizler değil, değer üreten hızlı iterasyonlar devrindeyiz.</p>
+            
+            [Image of Agile software development lifecycle diagram]
+            
+            <div class="grid md:grid-cols-4 gap-6 text-xs uppercase tracking-widest">
+                <div class="p-6 bg-slate-950 border border-slate-800 rounded shadow-2xl">
+                    <span class="block text-blue-500 mb-2 font-black text-xl">01</span> Hızlı Prototipleme
+                </div>
+                <div class="p-6 bg-slate-950 border border-slate-800 rounded shadow-2xl">
+                    <span class="block text-blue-500 mb-2 font-black text-xl">02</span> Sürekli Feedback
+                </div>
+                <div class="p-6 bg-slate-950 border border-slate-800 rounded shadow-2xl">
+                    <span class="block text-blue-500 mb-2 font-black text-xl">03</span> Iteratif Gelişim
+                </div>
+                <div class="p-6 bg-slate-950 border border-slate-800 rounded shadow-2xl">
+                    <span class="block text-blue-500 mb-2 font-black text-xl">04</span> Sürekli Teslimat
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer id="iletisim" class="py-12 border-t border-slate-800 text-center">
-        <p class="text-slate-500 text-sm">© 2026 Adviture Teknoloji Anonim Şirketi. Tüm Hakları Saklıdır.</p>
-        <p class="text-slate-600 text-xs mt-2 uppercase tracking-widest">İstanbul, Türkiye</p>
-    </footer>
+    <section id="referanslar" class="py-24 px-6 max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold mb-16 border-l-4 border-blue-500 pl-4 uppercase">Proven Success</h2>
+        <div class="grid md:grid-cols-2 gap-16">
+            <div class="group">
+                <h4 class="text-blue-500 font-bold mb-2">Vodafone Genesis & Ceylan</h4>
+                <h3 class="text-xl font-bold mb-4 group-hover:text-blue-400 transition">Dev Ölçekli Veri Göçü</h3>
+                <p class="text-slate-400 text-sm leading-relaxed italic">20 Milyon abone verisinin CRM sistemlerinden yeni mimarilere sıfır hata ile taşınması ve veri temizleme liderliği.</p>
+            </div>
+            <div class="group">
+                <h4 class="text-blue-500 font-bold mb-2">Türk Telekom Program One</h4>
+                <h3 class="text-xl font-bold mb-4 group-hover:text-blue-400 transition">BSS/OSS Modernizasyonu</h3>
+                <p class="text-slate-400 text-sm leading-relaxed italic">Karmaşık sistem dönüşümlerinde proje yönetimi ve veri entegrasyonu otoritesi olarak sunulan danışmanlık.</p>
+            </div>
+            <div class="group">
+                <h4 class="text-blue-500 font-bold mb-2">Merkür Turizm</h4>
+                <h3 class="text-xl font-bold mb-4 group-hover:text-blue-400 transition">Türkiye'nin İlk SAP HANA Kurulumu</h3>
+                <p class="text-slate-400 text-sm leading-relaxed italic">Geleceğin veritabanı teknolojisini Türkiye'de ilk uygulayan vizyoner proje yönetimi.</p>
+            </div>
+            <div class="group">
+                <h4 class="text-blue-500 font-bold mb-2">İŞKUR</h4>
+                <h3 class="text-xl font-bold mb-4 group-hover:text-blue-400 transition">Kamu Mali Yönetim Modernizasyonu</h3>
+                <p class="text-slate-400 text-sm leading-relaxed italic">Mali yönetim sistemlerinin analitik araçlarla güçlendirilmesi ve dijital dönüşümü.</p>
+            </div>
+        </div>
+    </section>
 
-</body>
-</html>
+    <footer id="iletisim"
